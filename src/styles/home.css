@@ -1,0 +1,24 @@
+#content.home > img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin: 2rem auto;
+    transition: transform,filter, 300ms ease-in-out;
+}
+
+#content.home > img:hover {
+    transform: scale(1.1);
+    filter: hue-rotate(45deg);
+}
+
+#content.home > .title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#content.home > .description {
+    font-size: 1.4rem;
+}

@@ -1,0 +1,28 @@
+#content.contact>.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+#content.contact>.contact-container>.info {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+#content.contact>.contact-container>.info p {
+    font-size: 1.8rem;
+}
+
+#content.contact .info>img {
+    width: 2rem;
+}
+
+#content.contact .map>img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
+}
