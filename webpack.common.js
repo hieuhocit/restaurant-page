@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const json5 = require('json5');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -15,6 +16,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.html',
         }),
+        new CopyPlugin({
+            patterns: [
+                { from: './src/assets/favicons/favicon.ico', to: '' }
+            ]
+        })
     ],
     module: {
         rules: [
